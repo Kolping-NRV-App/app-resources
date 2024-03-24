@@ -2,7 +2,7 @@
 	"name": "Kolping Neuravensburg App",
 	"short_name": "Kolping Neuravensburg App",
 	"description": "",
-	"start_url": "https://kolpingnrvapp.wixsite.com/kolping-neuravensbur",
+	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "portrait",
 	"background_color": "#ffffff",

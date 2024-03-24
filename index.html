@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,15 +14,16 @@
 
 <style>
     body, html {
+		background-color: black;
         margin: 0;
         padding: 0;
         height: 100%;
-	width: 100%;
+		width: 100%;
         overflow: hidden;
     }
     #iframe-container {
         position: fixed;
-        top: 0;
+        top: -5.7%;
         left: 0;
         width: 100%;
         height: 100%;
@@ -39,23 +41,8 @@
 
 </head>
 <body>
-
-<script>
-if (location.protocol.substr(0, 4) === "file")
-{
-	alert("Web exports won't work until you upload them. (When running on the file: protocol, browsers block many features from working for security reasons.)");
-}
-</script>
-
-	<noscript>
-		<div id="notSupportedWrap">
-			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
-			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
-		</div>
-	</noscript>
-	<div id="iframe-container">
+<div id="iframe-container">
     <iframe src="https://kolpingnrvapp.wixsite.com/kolping-neuravensbur" frameborder="0" scrolling="auto"></iframe>
 </div>
-
 </body>
 </html>

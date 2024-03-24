@@ -5,8 +5,6 @@
 <title>Kolping Neuravensburg App</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-<meta name="generator" content="Scirra Construct">
-
 	<link rel="manifest" href="appmanifest.json">
 	<link rel="apple-touch-icon" sizes="128x128" href="icons/Symbol-128.png">
 	<link rel="apple-touch-icon" sizes="256x256" href="icons/Symbol-256.png">
@@ -17,6 +15,14 @@
     body, html {
         margin: 0;
         padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #iframe-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 100%;
         overflow: hidden;
     }
@@ -44,7 +50,9 @@ if (location.protocol.substr(0, 4) === "file")
 			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
 		</div>
 	</noscript>
-	<iframe src="https://kolpingnrvapp.wixsite.com/kolping-neuravensbur" frameborder="0" scrolling="auto"></iframe>
+	<div id="iframe-container">
+    <iframe src="https://kolpingnrvapp.wixsite.com/kolping-neuravensbur" frameborder="0" scrolling="auto"></iframe>
+</div>
 
 </body>
 </html>
